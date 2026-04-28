@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<style>
+
+body {
+  margin: 0;
+  background: #111;
+}
+
+.section {
+  position: relative;
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* TRIÁNGULOS ABAJO */
+.section::before,
+.section::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+}
+
+.section::before {
+  border-bottom: 60px solid #111;
+  border-right: 600px solid transparent;
+  left: 0;
+}
+
+.section::after {
+  border-bottom: 60px solid #111;
+  border-left: 600px solid transparent;
+  right: 0;
+}
+
+/* TRIÁNGULOS ARRIBA */
+.top::before,
+.top::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+}
+
+.top::before {
+  border-top: 60px solid #111;
+  border-right: 600px solid transparent;
+  left: 0;
+}
+
+.top::after {
+  border-top: 60px solid #111;
+  border-left: 600px solid transparent;
+  right: 0;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="section top">
+  <h1>SCANLIVEX</h1>
+  <p>Experiencia inmersiva de aprendizaje</p>
+</div>
+
+</body>
+</html>
